@@ -1,4 +1,4 @@
 ITILDUCIC
 =========
 
-GitHub page for the repository.
+GitHub-Page repository.
