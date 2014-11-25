@@ -1,0 +1,2 @@
+/* TEAM */	Veritas Inquisitor Developer: Prashant Sinha	Contact: <firstname><lastname>@outlook.com, <firstname>@ducic.ac.in	Twitter: @PrashntSinha
+	GitHub: github.com/PrashntS	From: New Delhi, India/* THANKS */	Motivator, Helper and Everything awesome: Ir. Abhijeet Parmar <firstname>.eos@gmail.com		/* SITE */	Language: English	Standards: HTML5, CSS3	Technologies: JQuery, Bootstrap	Perks: No Flash!	Doctype: HTML5	IDE: Sublime Text 3
