@@ -1,8 +1,11 @@
 @import "mixin"
 
-$source-sans:       Source Sans Pro
+$source-sans:       "Source Sans Pro"
 $background:        #FFFFFF
-$nav-background:    #1C1F26
+
+$header-background: #010712
+
+$nav-background:    rgba(28, 31, 38, 0.95)
 $nav-border:        #010712
 $nav-border-size:   2px
 $nav-color:         #FFF
@@ -11,6 +14,18 @@ $nav-hover:         #04518C
 $nav-hover-border:  #00A1D9
 $nav-logo-width:    253px
 $nav-seperator:     #2F2F2F
+
+$hero-height:       80%
+$hero-background:   #FFF
+
+html, body
+    font-family:    $source-sans
+    height:         100%
+    margin:         0
+    position:       relative
+
+body
+    background:     #3B3E4A
 
 .esy
     .skiptocontent
@@ -38,6 +53,25 @@ $nav-seperator:     #2F2F2F
             text-align: center
             font-size:  1.2em
             z-index:    999
+
+    header
+        background:         $header-background
+        color:              #FFFFFF
+        padding:            2px 10%
+        text-align:         right
+
+        @media (max-width: 768px)
+            &
+                display: none
+
+        @media (max-width: 1024px) and (min-width: 768px)
+            &
+                padding:    2px 5%
+
+        a, a:hover, a:active
+            color:          #FFFFFF
+            text-transform: upper-case
+            text-decoration:none
 
     nav
         @media (min-width: 768px)
@@ -116,6 +150,7 @@ $nav-seperator:     #2F2F2F
             font-family:    $source-sans
             font-size:      18px
             position:       fixed
+            top:            0
             width:          100%
             z-index:        10
 
@@ -189,4 +224,20 @@ $nav-seperator:     #2F2F2F
                             font-weight:    300
                             text-decoration: none
 
-    
+    .hero
+        height:         $hero-height
+        padding-top:    $nav-height
+        position:       relative
+
+        .canvas
+            background: $hero-background
+            height:     100%
+            position:   absolute
+            top:        0
+            width:      100%
+            z-index:    -1
+
+        .wrapper
+            margin:     0 10%
+
+            .caption
