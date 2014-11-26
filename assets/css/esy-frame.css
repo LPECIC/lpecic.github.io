@@ -2,6 +2,31 @@
     body, html {
         height: 100%;
         position: relative;
+        margin: 0;
+        background: #777;
+    }
+
+/** .esy classes */
+    .esy {
+        font-family: 'Source Sans Pro';
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .esy p, .esy .p {
+        font-family: 'Source Sans Pro';
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .esy h1, .esy h2, .esy h3, .esy h4, .esy h5, .esy h6,
+    .esy .h1, .esy .h2, .esy .h3, .esy .h4, .esy .h5, .esy .h6 {
+        font-family: 'Source Sans Pro';
+        font-weight: 500;
+    }
+    .esy .margin-above {
+        margin-top: 15px;
+    }
+    .esy .margin-below {
+        margin-bottom: 15px;
     }
 
 /** esy-wrapper. Wraps the Container. */
@@ -58,6 +83,7 @@
 /** Fixes the weird outline around text when clicking. */
     a {
         color: inherit;
+        text-decoration: none;
     }
     a:hover {
         color: inherit;
