@@ -1,3 +1,5 @@
+@import "_mixin"
+
 $source-sans:       Source Sans Pro
 $background:        #FFFFFF
 $nav-background:    #1C1F26
@@ -9,13 +11,6 @@ $nav-hover:         #04518C
 $nav-hover-border:  #00A1D9
 $nav-logo-width:    253px
 $nav-seperator:     #2F2F2F
-
-@mixin transition($transition)
-    -webkit-transition: $transition
-    -moz-transition: $transition
-    -ms-transition: $transition
-    -o-transition: $transition
-    transition: $transition
 
 .esy
     .skiptocontent
@@ -44,63 +39,144 @@ $nav-seperator:     #2F2F2F
             font-size:  1.2em
             z-index:    999
 
-    .esy-nav
-        background:     $nav-background
-        border-bottom:  $nav-border-size solid $nav-border
-        color:          $nav-color
-        font-family:    $source-sans
-        font-size:      18px
-        position:       fixed
-        width:          100%
-        z-index:        10
+    @media (min-width: 768px)
+        .esy-nav
+            background:     $nav-background
+            border-bottom:  $nav-border-size solid $nav-border
+            color:          $nav-color
+            font-family:    $source-sans
+            font-size:      18px
+            position:       fixed
+            width:          100%
+            z-index:        10
 
-        .wrapper
-            margin:     0 10%
+            .wrapper
+                margin:     0 10%
 
-            .esy-logo
-                a
-                    font-size: 0
-
-                    img
-                        height:     $nav-height
-                        max-width:  100%
-                        width:      $nav-logo-width
-
-                    p
-                        position:   absolute
-                        top:        -100%
-
-            .esy-small-header
-                display: none
-
-            ul
-                list-style-type:    none
-                margin:             0 0 0 $nav-logo-width
-                position:           absolute
-                padding:            0
-                top:                0
-
-                li
-                    cursor:         pointer
-                    display:        inline-box
-                    display:        table-cell
-                    line-height:    18px
-                    padding:        ($nav-height - 18px)/2 0
-                    @include        transition((background 0.2s, border 0.2s))
-
-                    &:hover, &:active
-                        background: $nav-hover
-                        border-bottom: $nav-border-size solid $nav-hover-border
-
-                    &:last-of-type
-                        a
-                            border-right:   none
-
+                .esy-logo
                     a
-                        border-right:   1px solid $nav-seperator
-                        color:          $nav-color
-                        font-size:      18px
-                        font-style:     normal
-                        font-weight:    300
-                        padding:        0 15px
-                        text-decoration: none
+                        font-size: 0
+
+                        img
+                            height:     $nav-height
+                            max-width:  100%
+                            width:      $nav-logo-width
+
+                        p
+                            position:   absolute
+                            top:        -100%
+
+                .esy-small-header
+                    display: none
+
+                ul
+                    list-style-type:    none
+                    margin:             0 0 0 $nav-logo-width
+                    position:           absolute
+                    padding:            0
+                    top:                0
+
+                    li
+                        cursor:         pointer
+                        display:        inline-box
+                        display:        table-cell
+                        line-height:    18px
+                        padding:        ($nav-height - 18px)/2 0
+                        @include        transition((background 0.2s, border 0.2s))
+
+                        &:hover, &:active
+                            background: $nav-hover
+                            border-bottom: $nav-border-size solid $nav-hover-border
+
+                        &:last-of-type
+                            a
+                                border-right:   none
+
+                        a
+                            border-right:   1px solid $nav-seperator
+                            color:          $nav-color
+                            font-size:      18px
+                            font-style:     normal
+                            font-weight:    300
+                            padding:        0 15px
+                            text-decoration: none
+
+    @media (max-width: 1024px) and (min-width: 768px)
+        .esy-nav
+            .wrapper
+                margin:     0 5%
+                ul
+                    li
+                        a
+                            font-size:      16px
+                            padding:        0 5px
+
+    @media (max-width: 767px)
+        .esy-nav
+            background:     $nav-background
+            color:          $nav-color
+            font-family:    $source-sans
+            font-size:      18px
+            position:       fixed
+            width:          100%
+            z-index:        10
+
+            .wrapper
+
+                .esy-logo
+                    margin-left:        $nav-height
+                    a
+                        font-size: 0
+
+                        img
+                            height:     $nav-height
+                            max-width:  100%
+                            width:      $nav-logo-width
+
+                        p
+                            position:   absolute
+                            top:        -100%
+
+                .esy-small-header
+                    display:            inline
+                    font-size:          $nav-height / 2
+                    height:             $nav-height
+                    left:               0
+                    line-height:        $nav-height / 2
+                    padding:            $nav-height / 4
+                    position:           absolute
+                    width:              $nav-height
+                    text-align:         center
+                    @include            transition((background 0.2s))
+                    top:                0
+
+                    &:hover, &:active, &.open
+                        background:     $nav-hover
+
+                ul
+                    background:         $nav-background
+                    height:             100vh
+                    list-style-type:    none
+                    margin-top:         $nav-height
+                    overflow:           scroll
+                    position:           absolute
+                    padding:            0
+                    top:                0
+                    left:               0
+                    min-width:          240px
+
+                    li
+                        cursor:         pointer
+                        line-height:    18px
+                        padding:        ($nav-height - 18px)/2 ($nav-height/4)
+                        @include        transition((background 0.2s, border 0.2s))
+
+                        &:hover, &:active
+                            background: $nav-hover
+
+                        a
+                            color:          $nav-color
+                            font-size:      18px
+                            font-style:     normal
+                            font-weight:    300
+                            text-decoration: none

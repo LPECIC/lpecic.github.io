@@ -21,57 +21,130 @@
     text-align: center;
     font-size: 1.2em;
     z-index: 999; }
-.esy .esy-nav {
-  background: #1C1F26;
-  border-bottom: 2px solid #010712;
-  color: #FFF;
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  position: fixed;
-  width: 100%;
-  z-index: 10; }
-  .esy .esy-nav .wrapper {
-    margin: 0 10%; }
-    .esy .esy-nav .wrapper .esy-logo a {
-      font-size: 0; }
-      .esy .esy-nav .wrapper .esy-logo a img {
-        height: 50px;
-        max-width: 100%;
-        width: 253px; }
-      .esy .esy-nav .wrapper .esy-logo a p {
+@media (min-width: 768px) {
+  .esy .esy-nav {
+    background: #1C1F26;
+    border-bottom: 2px solid #010712;
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    z-index: 10; }
+    .esy .esy-nav .wrapper {
+      margin: 0 10%; }
+      .esy .esy-nav .wrapper .esy-logo a {
+        font-size: 0; }
+        .esy .esy-nav .wrapper .esy-logo a img {
+          height: 50px;
+          max-width: 100%;
+          width: 253px; }
+        .esy .esy-nav .wrapper .esy-logo a p {
+          position: absolute;
+          top: -100%; }
+      .esy .esy-nav .wrapper .esy-small-header {
+        display: none; }
+      .esy .esy-nav .wrapper ul {
+        list-style-type: none;
+        margin: 0 0 0 253px;
         position: absolute;
-        top: -100%; }
+        padding: 0;
+        top: 0; }
+        .esy .esy-nav .wrapper ul li {
+          cursor: pointer;
+          display: inline-box;
+          display: table-cell;
+          line-height: 18px;
+          padding: 16px 0;
+          -webkit-transition: background 0.2s, border 0.2s;
+          -moz-transition: background 0.2s, border 0.2s;
+          -ms-transition: background 0.2s, border 0.2s;
+          -o-transition: background 0.2s, border 0.2s;
+          transition: background 0.2s, border 0.2s; }
+          .esy .esy-nav .wrapper ul li:hover, .esy .esy-nav .wrapper ul li:active {
+            background: #04518C;
+            border-bottom: 2px solid #00A1D9; }
+          .esy .esy-nav .wrapper ul li:last-of-type a {
+            border-right: none; }
+          .esy .esy-nav .wrapper ul li a {
+            border-right: 1px solid #2F2F2F;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            padding: 0 15px;
+            text-decoration: none; } }
+@media (max-width: 1024px) and (min-width: 768px) {
+  .esy .esy-nav .wrapper {
+    margin: 0 5%; }
+    .esy .esy-nav .wrapper ul li a {
+      font-size: 16px;
+      padding: 0 5px; } }
+@media (max-width: 767px) {
+  .esy .esy-nav {
+    background: #1C1F26;
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    z-index: 10; }
+    .esy .esy-nav .wrapper .esy-logo {
+      margin-left: 50px; }
+      .esy .esy-nav .wrapper .esy-logo a {
+        font-size: 0; }
+        .esy .esy-nav .wrapper .esy-logo a img {
+          height: 50px;
+          max-width: 100%;
+          width: 253px; }
+        .esy .esy-nav .wrapper .esy-logo a p {
+          position: absolute;
+          top: -100%; }
     .esy .esy-nav .wrapper .esy-small-header {
-      display: none; }
+      display: inline;
+      font-size: 25px;
+      height: 50px;
+      left: 0;
+      line-height: 25px;
+      padding: 12.5px;
+      position: absolute;
+      width: 50px;
+      text-align: center;
+      -webkit-transition: background 0.2s;
+      -moz-transition: background 0.2s;
+      -ms-transition: background 0.2s;
+      -o-transition: background 0.2s;
+      transition: background 0.2s;
+      top: 0; }
+      .esy .esy-nav .wrapper .esy-small-header:hover, .esy .esy-nav .wrapper .esy-small-header:active, .esy .esy-nav .wrapper .esy-small-header.open {
+        background: #04518C; }
     .esy .esy-nav .wrapper ul {
+      background: #1C1F26;
+      height: 100vh;
       list-style-type: none;
-      margin: 0 0 0 253px;
+      margin-top: 50px;
+      overflow: scroll;
       position: absolute;
       padding: 0;
-      top: 0; }
+      top: 0;
+      left: 0;
+      min-width: 240px; }
       .esy .esy-nav .wrapper ul li {
         cursor: pointer;
-        display: inline-box;
-        display: table-cell;
         line-height: 18px;
-        padding: 16px 0;
+        padding: 16px 12.5px;
         -webkit-transition: background 0.2s, border 0.2s;
         -moz-transition: background 0.2s, border 0.2s;
         -ms-transition: background 0.2s, border 0.2s;
         -o-transition: background 0.2s, border 0.2s;
         transition: background 0.2s, border 0.2s; }
         .esy .esy-nav .wrapper ul li:hover, .esy .esy-nav .wrapper ul li:active {
-          background: #04518C;
-          border-bottom: 2px solid #00A1D9; }
-        .esy .esy-nav .wrapper ul li:last-of-type a {
-          border-right: none; }
+          background: #04518C; }
         .esy .esy-nav .wrapper ul li a {
-          border-right: 1px solid #2F2F2F;
           color: #FFF;
           font-size: 18px;
           font-style: normal;
           font-weight: 300;
-          padding: 0 15px;
-          text-decoration: none; }
+          text-decoration: none; } }
 
 /*# sourceMappingURL=esy.css.map */
