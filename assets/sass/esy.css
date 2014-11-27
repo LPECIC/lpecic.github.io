@@ -34,7 +34,10 @@ body {
   background: #010712;
   color: #FFFFFF;
   padding: 2px 10%;
-  text-align: right; }
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  z-index: 10; }
   @media (max-width: 768px) {
     .esy header {
       display: none; } }
@@ -51,6 +54,7 @@ body {
     color: #FFF;
     font-family: "Source Sans Pro";
     font-size: 18px;
+    margin-top: 24px;
     position: fixed;
     width: 100%;
     z-index: 10; }
@@ -192,7 +196,7 @@ body {
           text-decoration: none; } }
 .esy .hero {
   height: 80%;
-  padding-top: 50px;
+  padding-top: 74px;
   position: relative; }
   .esy .hero .canvas {
     background: #FFF;

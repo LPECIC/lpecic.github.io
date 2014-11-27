@@ -58,7 +58,10 @@ body
         background:         $header-background
         color:              #FFFFFF
         padding:            2px 10%
+        position:           fixed
         text-align:         right
+        width:              100%
+        z-index:            10
 
         @media (max-width: 768px)
             &
@@ -80,6 +83,7 @@ body
             color:          $nav-color
             font-family:    $source-sans
             font-size:      18px
+            margin-top:     24px
             position:       fixed
             width:          100%
             z-index:        10
@@ -226,7 +230,7 @@ body
 
     .hero
         height:         $hero-height
-        padding-top:    $nav-height
+        padding-top:    $nav-height + 24px
         position:       relative
 
         .canvas
