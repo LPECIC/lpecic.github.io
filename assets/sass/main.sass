@@ -16,7 +16,8 @@ $nav-logo-width:    253px
 $nav-seperator:     #2F2F2F
 
 $hero-height:       80%
-$hero-background:   #FFF
+$hero-background:   url(../img/herobg.jpg) 
+$hero-overlay:      rgba(1,20,40,0.9)
 
 html, body
     font-family:    $source-sans
@@ -125,6 +126,8 @@ body
                         &:hover, &:active
                             background: $nav-hover
                             border-bottom: $nav-border-size solid $nav-hover-border
+                            a
+                                border-right:   1px solid transparent
 
                         &:last-of-type
                             a
@@ -229,12 +232,18 @@ body
                             text-decoration: none
 
     .hero
+        background:     $hero-overlay
+        color:          #FFFFFF
         height:         $hero-height
         padding-top:    $nav-height + 24px
         position:       relative
 
         .canvas
-            background: $hero-background
+            background:  $hero-background no-repeat center center 
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+            background-size: cover
             height:     100%
             position:   absolute
             top:        0

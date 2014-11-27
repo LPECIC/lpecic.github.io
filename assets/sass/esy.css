@@ -91,6 +91,8 @@ body {
           .esy nav .wrapper ul li:hover, .esy nav .wrapper ul li:active {
             background: #04518C;
             border-bottom: 2px solid #00A1D9; }
+            .esy nav .wrapper ul li:hover a, .esy nav .wrapper ul li:active a {
+              border-right: 1px solid transparent; }
           .esy nav .wrapper ul li:last-of-type a {
             border-right: none; }
           .esy nav .wrapper ul li a {
@@ -195,11 +197,17 @@ body {
           font-weight: 300;
           text-decoration: none; } }
 .esy .hero {
+  background: rgba(1, 20, 40, 0.9);
+  color: #FFFFFF;
   height: 80%;
   padding-top: 74px;
   position: relative; }
   .esy .hero .canvas {
-    background: #FFF;
+    background: url(../img/herobg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
     position: absolute;
     top: 0;
