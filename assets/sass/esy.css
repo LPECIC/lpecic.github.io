@@ -5,7 +5,7 @@ html, body {
   position: relative; }
 
 body {
-  background: #3B3E4A; }
+  background: #FFFFFF; }
 
 .esy .skiptocontent {
   left: -999px;
@@ -197,7 +197,8 @@ body {
           font-weight: 300;
           text-decoration: none; } }
 .esy .hero {
-  background: rgba(1, 20, 40, 0.9);
+  background: rgba(1, 20, 40, 0.5);
+  border-bottom: 2px solid #FFF;
   color: #FFFFFF;
   height: 80%;
   padding-top: 74px;
@@ -215,5 +216,20 @@ body {
     z-index: -1; }
   .esy .hero .wrapper {
     margin: 0 10%; }
+@media (min-width: 768px) {
+  .esy .wrapper {
+    margin: 0 10%; } }
+@media (max-width: 1024px) and (min-width: 768px) {
+  .esy .wrapper {
+    margin: 0 5%; } }
+@media (max-width: 767px) {
+  .esy .wrapper {
+    margin: 0 5%; } }
+.esy footer {
+  background: #1c1f26;
+  color: #FFFFFF;
+  font-weight: 300;
+  padding: 10px 0 0 0;
+  position: relative; }
 
 /*# sourceMappingURL=esy.css.map */

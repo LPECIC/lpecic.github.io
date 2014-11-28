@@ -1,5 +1,11 @@
 @import "mixin"
 
+// Main CSS preprocessor.
+// @author  Prashant Sinha <firstname><lastname>@outlook.com
+
+// No License: You're free to do whatever you want with it.
+
+
 $source-sans:       "Source Sans Pro"
 $background:        #FFFFFF
 
@@ -17,7 +23,9 @@ $nav-seperator:     #2F2F2F
 
 $hero-height:       80%
 $hero-background:   url(../img/herobg.jpg) 
-$hero-overlay:      rgba(1,20,40,0.9)
+$hero-overlay:      rgba(1,20,40,0.5)
+
+$footer-bg:         rgb(28, 31, 38)
 
 html, body
     font-family:    $source-sans
@@ -26,7 +34,7 @@ html, body
     position:       relative
 
 body
-    background:     #3B3E4A
+    background:     $background
 
 .esy
     .skiptocontent
@@ -233,6 +241,7 @@ body
 
     .hero
         background:     $hero-overlay
+        border-bottom:  2px solid #FFF
         color:          #FFFFFF
         height:         $hero-height
         padding-top:    $nav-height + 24px
@@ -254,3 +263,20 @@ body
             margin:     0 10%
 
             .caption
+
+    .wrapper
+        @media (min-width: 768px)
+            margin:     0 10%
+
+        @media (max-width: 1024px) and (min-width: 768px)
+            margin:     0 5%
+
+        @media (max-width: 767px)
+            margin:     0 5%
+
+    footer
+        background:     $footer-bg
+        color:          #FFFFFF
+        font-weight:    300
+        padding:        10px 0 0 0
+        position:       relative
