@@ -37,6 +37,9 @@ body
     background:     $background
 
 .esy
+    img
+        max-width:  100%
+
     .skiptocontent
         left:       -999px
         position:   absolute
@@ -284,6 +287,12 @@ body
         .hide
             position:   absolute
             left:       -100000px
+
+        img
+            opacity:    0.6
+            //@include    transition((opacity 0.1s))
+        img:hover
+            opacity:    1
 
         ul
             list-style-type: none

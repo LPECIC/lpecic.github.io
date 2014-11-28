@@ -7,6 +7,8 @@ html, body {
 body {
   background: #FFFFFF; }
 
+.esy img {
+  max-width: 100%; }
 .esy .skiptocontent {
   left: -999px;
   position: absolute;
@@ -234,6 +236,10 @@ body {
   .esy footer .hide {
     position: absolute;
     left: -100000px; }
+  .esy footer img {
+    opacity: 0.6; }
+  .esy footer img:hover {
+    opacity: 1; }
   .esy footer ul {
     list-style-type: none;
     padding: 0;
