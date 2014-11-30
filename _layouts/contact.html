@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="esy">
+
+    {% include header.html %}
+
+    <section class="hero small">
+        <div class="canvas" id="cadnvas" style="background: url({{ page.hero }})"> </div>
+        <div class="wrapper">
+            <div class="row">
+                <aside class="col-md-4">
+                    <div>
+                        <p></p>
+                    </div>
+                </aside>
+                <aside class="col-md-8">
+                    <div class="caption">
+                        <p class="h3">{{ page.caption }}</p>
+                        <p class="h4">{{ page.details }}</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section id="content" class="content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

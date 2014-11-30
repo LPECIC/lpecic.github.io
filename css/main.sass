@@ -249,9 +249,21 @@ body
         background:     $hero-overlay
         border-bottom:  2px solid #FFF
         color:          #FFFFFF
-        height:         $hero-height
         padding-top:    $nav-height + 24px
         position:       relative
+
+        &.small
+            height:     30%
+            min-height: 30px
+            min-height: 30vh
+        &.medium
+            height:     50%
+            min-height: 200px
+            min-height: 60vh
+        &.large, &
+            height:     80%
+            min-height: 350px
+            min-height: 80px
 
         .canvas
             background:  $hero-background no-repeat center center 
