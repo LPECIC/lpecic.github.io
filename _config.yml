@@ -9,3 +9,4 @@ github_username:  prashnts
 
 # Build settings
 markdown: kramdown
+permalink: pretty

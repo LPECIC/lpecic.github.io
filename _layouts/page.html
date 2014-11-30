@@ -1,14 +1,19 @@
----
-layout: default
----
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="esy">
+    {% include header.html %}
+    <section class="hero small">
+        <div class="canvas" id="" style="background: url({{ page.hero }})"> </div>
+        <div class="strip">
+            <div class="wrapper">
+                <h2>{{ page.title }}</h2>            
+            </div>
+        </div>
+    </section>
+    <section id="content" class="content">
+        {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>
