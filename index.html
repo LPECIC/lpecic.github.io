@@ -1,120 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laboratory for Pattern Engineering</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/sass/esy.css">
-</head>
-<body class="esy">
-    <a class="skiptocontent" href="#content">Skip to main content</a>
+---
+layout: default
+---
 
-    <header>
-        <a href="#">Cluster Innovation Centre</a>,
-        <a href="#">University of Delhi</a>
-    </header>
+<div class="home">
 
-    <nav>
-        <div class="wrapper">
-            <div class="logo">
-                <a href="#" alt="Home">
-                    <p>Laboratory for Pattern Engineering</p>
-                    <img src="assets/img/logo.head.png" title="Laboratory for Pattern Engineering">
-                </a>
-            </div>
-            <div class="hamburger" onclick='$(".esy nav ul").toggleClass("open");'>
-                <p>Menu</p>
-                <i class="fa fa-bars"></i>
-            </div>
-            <ul>
-                <li>
-                    <a href="#">The Lab</a>
-                </li>
-                <li>
-                    <a href="#">Research &amp; Innovations</a>
-                </li>
-                <li>
-                    <a href="#">Venture Incubation &amp; Sponsorship</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <h1 class="page-heading">Posts</h1>
 
-    <section class="hero">
-        <div class="canvas" id="cadnvas"> </div>
-        <div class="wrapper">
-            <div class="row">
-                <aside class="col-md-4">
-                    <div>
-                        <p></p>
-                    </div>
-                </aside>
-                <aside class="col-md-8">
-                    <div class="caption">
-                        <p class="h3"></p>
-                        <p class="h4"></p>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </section>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <section id="content" class="content">
-        <div class="wrapper">
-            <h2>News and Events</h2>
-            <li>The sky is the limit only for those who aren't afraid to fly!</li>
-            <li>To go places and do things that have never been done before – that’s what living is all about.</li>
-            <li>The sky is the limit only for those who aren't afraid to fly!</li>
-            <li>To be the first to enter the cosmos, to engage, single-handed, in an unprecedented duel with nature—could one dream of anything more?</li>
-            <li>Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next 10.</li>
-            <li>The sky is the limit only for those who aren't afraid to fly!</li>
-            <li>To go places and do things that have never been done before – that’s what living is all about.</li>
-            <li>I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</li>
-        </div>
-    </section>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <footer>
-        <div class="wrapper">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="hide">Navigation</h2>
-                    <ul>
-                        <li class="more">The Lab
-                            <ul>
-                                <li>About the Lab</li>
-                                <li>Opportunities</li>
-                                <li>People</li>
-                                <li>Student Association Program</li>
-                            </ul>
-                        </li>
-                        <li class="more">Research & Innovation
-                            <ul>
-                                <li>Research Groups</li>
-                                <li>Interest Groups</li>
-                                <li>Projects</li>
-                                <li>Tools</li>
-                                <li>Dataset</li>
-                            </ul>
-                        </li>
-                        <li class="more">Venture Incubation & Sponsorship</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 text-right">
-                    <img src="/assets/img/logo.foot.png" height="60px">
-                    <img src="/assets/img/logo.cic.png" height="60px">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p>&copy; 2014 Laboratory of Pattern Engineering. All rights reserved. <a href="#">Privacy Policy</a></p>                    
-                </div>
-            </div>
-        </div>
-    </footer>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    <script src="assets/js/jquery.js"></script>
-</body>
-</html>
+</div>

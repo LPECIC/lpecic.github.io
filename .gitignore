@@ -1,5 +1,2 @@
-
-sass/sass-cache/
-
-*.scssc
-*.sassc
+_site
+.sass-cache
