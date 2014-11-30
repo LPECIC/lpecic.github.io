@@ -7,21 +7,11 @@
 
     {% include header.html %}
 
-    <section class="hero small">
-        <div class="canvas" id="cadnvas" style="background: url({{ page.hero }})"> </div>
-        <div class="wrapper">
-            <div class="row">
-                <aside class="col-md-4">
-                    <div>
-                        <p></p>
-                    </div>
-                </aside>
-                <aside class="col-md-8">
-                    <div class="caption">
-                        <p class="h3">{{ page.caption }}</p>
-                        <p class="h4">{{ page.details }}</p>
-                    </div>
-                </aside>
+    <section class="hero medium">
+        <div class="canvas" id="gmap_canvas"> </div>
+        <div class="strip">
+            <div class="wrapper">
+                <h2>Contact Us</h2>            
             </div>
         </div>
     </section>
@@ -33,6 +23,28 @@
     </section>
 
     {% include footer.html %}
+
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+        function init_map() {
+            var myOptions = {
+                zoom: 14,
+                center: new google.maps.LatLng(28.695, 77.21416629999999),
+                mapTypeId: google.maps.MapTypeId.ROAD,
+                disableDefaultUI: true
+            };
+            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(28.6909755, 77.21416629999999)
+            });
+            infowindow = new google.maps.InfoWindow({
+                content: "<b>Laboratory for Pattern Engineering</b><br/>Cluster Innovation Centre, University of Delhi<br/> Delhi, India"
+            });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
 
   </body>
 
