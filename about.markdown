@@ -40,7 +40,7 @@ hero:   /assets/img/background.sq.r.png
             <div class="card sm">
                 <img src="/assets/img/icon.culture.png">
                 <p class="h2">Culture</p>
-                <p class="h3">Cross-Disciplinary, Silo - Free, Equalitarian</p>
+                <p class="h3">Cross-Disciplinary, Silo-Free, Equalitarian</p>
             </div>
         </div>
     </div>
@@ -61,4 +61,8 @@ hero:   /assets/img/background.sq.r.png
             </div>
         </div>
     </div>
+</div>
+
+<div class="wrapper">
+    <h2>Opportunities</h2>
 </div>

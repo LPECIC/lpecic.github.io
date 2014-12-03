@@ -321,9 +321,13 @@ body
 
         .row
             background: rgba(255, 255, 255, 0.8)
+            margin: 0
 
         div[class^="col-"]
-            padding:    25px 10px
+            padding:    25px 0
+
+            &.pad
+                padding:    inherit 10px
 
         .card
             text-align:     center
@@ -335,9 +339,9 @@ body
                 font-weight: 200
 
             .h2
-                font-size: 24px
+                font-size: 20px
             .h3 
-                font-size: 18px
+                font-size: 17px
 
     .wrapper
         @media (min-width: 768px)
