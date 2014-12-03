@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  About the Lab
-hero:   http://lorempixel.com/1366/768/
+hero:   /assets/img/background.sq.r.png
 ---
 <div class="wrapper">
     <p>Laboratory for Pattern Engineering is focused on amalgamating chaos to engineer patterns and structures to improve the way we learn, see things and grow. Through its diversified research groups, the Lab fosters cutting edge research in areas such as pervasive computing, social dynamics and digital humanities.</p>
@@ -9,6 +9,7 @@ hero:   http://lorempixel.com/1366/768/
 </div>
 
 <div class="container">
+    <h1>The Ecosystem</h1>
     <div class="row">
         <div class="col-sm-4">
             <div class="card sm">
@@ -47,15 +48,3 @@ hero:   http://lorempixel.com/1366/768/
         </div>
     </div>
 </div>
-
-###The Ecosystem @ Laboratory for Pattern Engineering
- 
-Diversity: Cultural, Ethnic, Academic
- 
-Disruption: Technology, Leader, Trend
- 
-Culture: Cross-Disciplinary, Silo - Free,  Equalitarian
- 
-Intense Competition
- 
-Few Fuzzy Processes
