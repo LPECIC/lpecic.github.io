@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  About the Lab
-hero:   /assets/img/background.sq.r.png
+hero:   /assets/img/background.sin.png
 ---
 <div class="wrapper">
     <p>Laboratory for Pattern Engineering is focused on amalgamating chaos to engineer patterns and structures to improve the way we learn, see things and grow. Through its diversified research groups, the Lab fosters cutting edge research in areas such as pervasive computing, social dynamics and digital humanities.</p>
@@ -11,21 +11,21 @@ hero:   /assets/img/background.sq.r.png
 <div class="container">
     <h1>The Ecosystem</h1>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-offset-3 col-sm-2">
             <div class="card sm">
                 <img src="/assets/img/icon.diversity.png">
                 <p class="h2">Diversity</p>
                 <p class="h3">Cultural, Ethnic, Academic</p>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <div class="card sm">
                 <img src="/assets/img/icon.disruptive.png">
                 <p class="h2">Disruption</p>
                 <p class="h3">Technology, Leader, Trend</p>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <div class="card sm">
                 <img src="/assets/img/icon.culture.png">
                 <p class="h2">Culture</p>
@@ -34,13 +34,13 @@ hero:   /assets/img/background.sq.r.png
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-offset-4 col-sm-2">
             <div class="card lg">
                 <img src="/assets/img/icon.intense.competition.png">
                 <p class="h2">Intense Competition</p>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-2">
             <div class="card lg">
                 <img src="/assets/img/icon.fuzzy.processes.png">
                 <p class="h2">Few Fuzzy Processes</p>
