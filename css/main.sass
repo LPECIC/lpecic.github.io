@@ -289,10 +289,8 @@ body
 
             h1, h2, h3, h4, h5, h6, p
                 font-weight: 300
-                margin: 5px 0
-
-            .wrapper
-                border-bottom:  5px solid $nav-hover-border
+                padding: 5px 0
+                margin: 0 0
 
     .container
         @media (min-width: 768px)
@@ -346,7 +344,6 @@ body
                 border-bottom: 1px solid #606060
                 border-top: 1px solid #606060
 
-
     .wrapper
         @media (min-width: 768px)
             margin:     0 10%
@@ -356,6 +353,13 @@ body
 
         @media (max-width: 767px)
             margin:     0 5%
+
+    .container, .wrapper
+        h1, h2, h3, h4, h5, h6
+            &.head
+                border-bottom: 4px solid $nav-hover-border
+                margin-bottom: 0px
+                padding-bottom: 10px
 
     footer
         background:     $footer-bg
@@ -402,3 +406,6 @@ body
 
                 a
                     color: #FFFFFF
+
+.esy-dat
+    

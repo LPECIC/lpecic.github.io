@@ -2,6 +2,51 @@
 layout: page
 title:  About the Lab
 hero:   /assets/img/background.sq.r.png
+people:
+    faculty:
+        -   name:   Dr. Madan Mohan Chaturvedi
+            img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/mmc.jpg
+            bio:    
+        -   name:   Dr. Bibudhananda Biswal
+            img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/biswal.jpg
+            bio:    
+        -   name:   Dr. Asani Bhaduri
+            img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/asani.jpg
+            bio:    
+        -   name:   Dr. Dapayan Dasgupta
+            img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/dp-pic.jpg
+            bio:    
+        -   name:   Mr. Abhijeet Parmar
+            img:    
+    student:
+        -   name:   Ankit Pathak
+            img:    //
+            bio:    //
+        -   name:   Anurag Singh
+            img:    //
+            bio:    //
+        -   name:   Madhulika Mukharjee
+            img:    //
+            bio:    //
+        -   name:   Mayank Jain
+            img:    //
+            bio:    //
+        -   name:   Pragya Jaiswal
+            img:    //
+            bio:    //
+        -   name:   Prashant Sinha
+            img:    //
+            bio:    //
+        -   name:   Shreya Smita
+            img:    //
+            bio:    //
+        -   name:   Tarun Khajhuria
+            img:    //
+            bio:    //
+        -   name:   Vasundhara
+            img:    //
+            bio:    //
+
 ---
 <div class="container">
     <div class="row">
@@ -18,7 +63,7 @@ hero:   /assets/img/background.sq.r.png
 </div>
 
 <div class="wrapper">
-    <h2>The Ecosystem</h2>
+    <h2 class="head">The Ecosystem</h2>
 </div>
 <div class="container bg-gray">
     <div class="row">
@@ -63,6 +108,31 @@ hero:   /assets/img/background.sq.r.png
     </div>
 </div>
 
-<div class="wrapper">
+<!--div class="wrapper">
     <h2>Opportunities</h2>
+</div-->
+
+<div class="wrapper">
+    <h2 class="head">People</h2>
+    <h3>Faculty</h3>
+    <ol>
+        {% for person in page.people.faculty %}
+            <li>
+                <img src="{{ person.img }}">
+                <p class="lead">{{ person.name }}</p>
+                <p class="foot">{{ person.bio }}</p>
+            </li>
+        {% endfor %}
+    </ol>
+    <h3>Students</h3>
+    <ol>
+        {% for person in page.people.student %}
+            <li>
+                <img src="{{ person.img }}">
+                <p class="lead">{{ person.name }}</p>
+                <p class="foot">{{ person.bio }}</p>
+            </li>
+        {% endfor %}
+    </ol>
+
 </div>
