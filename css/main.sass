@@ -421,11 +421,22 @@ body
     .col-fixed
         width: 320px
 
+    .col-fixed-height
+        height: 200px
+
     .col-min
         min-width: 320px
 
     .col-max
         max-width: 320px
+
+    // Centering
+    .center
+        // Set parent as a relative element
+        &.vertical
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
 
 
     // Page Specific CSS from here. Refrain from adding universal CSS here.
@@ -452,3 +463,20 @@ body
                     border-radius: 0
                 img:hover
                     opacity: 1
+
+    .groups
+        .row
+            background: url(/assets/img/background.arr.b.png) fixed
+
+        div[class^="col-"]
+            color: #FFFFFF
+            height:     150px
+            text-align: center
+            position:   relative
+
+            div
+                padding: 10px
+                width: 100%
+
+                .lead
+                    margin: 0

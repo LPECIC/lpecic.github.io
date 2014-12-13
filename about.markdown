@@ -24,7 +24,8 @@ people:
         -   name:   Ankit Pathak
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/554656_478916968841309_958902291_n.jpg
             bio:    
-            git:    https://github.com/Pathaked
+            github: https://github.com/Pathaked
+            twitter: https://twitter.com/Pathaked
             fb:     https://www.facebook.com/AnkyPats
         -   name:   Anurag Singh
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/9507_534105060004531_1911697479_n.jpg
@@ -48,6 +49,7 @@ people:
         -   name:   Prashant Sinha
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/1623571_946248492068776_701300619295765708_n.jpg
             bio:    
+            twitter: https://twitter.com/PrashntSinha
             github: https://github.com/PrashntS
             fb:     https://www.facebook.com/PrashntS
         -   name:   Shreya Smita
@@ -62,17 +64,6 @@ people:
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/63442_726581017434024_6902567398253271897_n.jpg
             bio:    
             fb:     https://www.facebook.com/vasundhara.mehta.5
-researchgroups:
-    -   name: Int Sense
-        background: 
-    -   name: Sensible Systems
-        sub:  IoT, Affective and Pervasive Computing
-        background:
-    -   name: What IF
-        sub:  Big Data/ Reality Mining / Machine Learning / Computational Creativity
-        background:
-    -   name: Digital Humanities
-    -   name: Vox Pix Motion
 ---
 <div class="container">
     <div class="row">
@@ -80,14 +71,38 @@ researchgroups:
             <p>Laboratory for Pattern Engineering is focused on amalgamating chaos to engineer patterns and structures to improve the way we learn, see things and grow. Through its diversified research groups, the Lab fosters cutting edge research in areas such as pervasive computing, social dynamics and digital humanities.</p>
             <p>Within a year of its inception, the Lab has faculty and students working in five research groups developing technologies that have started producing critical research outputs and spin-offs. The Lab is dedicated to understand why the things are the way they are, bring deeper insights into patterns and help individuals make choices that are sensible and smart.</p>
         </div>
-        <div class="col-md-7">
-            <div class="row row-centered">
-                {% for group in page.researchgroups %}
-                    <div class="col-sm-3 col-centered col-fixed">
-                        <p class="lead">{{ group.name }}</p>
-                        <p class="foot">{{ group.sub }}</p>
+        <div class="col-md-offset-1 col-md-6 groups">
+            <h3>Research Groups</h3>
+            <div class="row">
+                <div class="col-sm-4" style="background:#003D5C">
+                    <div class="center vertical">
+                        <p class="lead">IntSense</p>
                     </div>
-                {% endfor %}
+                </div>
+                <div class="col-sm-4" style="background:#183152">
+                    <div class="center vertical">
+                        <p class="lead">Sensible Systems</p>
+                        <p class="foot">IoT, Affective and Pervasive Computing</p>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="background:#004358">
+                    <div class="center vertical">
+                        <p class="lead">What IF</p>
+                        <p class="foot">Big Data/ Reality Mining / Machine Learning / Computational Creativity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="background:#002D40">
+                    <div class="center vertical">
+                        <p class="lead">Digital Humanities</p>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="background:#005869">
+                    <div class="center vertical">
+                        <p class="lead">Vox Pix Motion</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
