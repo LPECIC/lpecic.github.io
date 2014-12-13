@@ -4,48 +4,64 @@ title:  About the Lab
 hero:   /assets/img/background.sq.r.png
 people:
     faculty:
-        -   name:   Dr. Madan Mohan Chaturvedi
+        -   name:   Prof. Madan Mohan Chaturvedi
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/mmc.jpg
             bio:    
-        -   name:   Dr. Bibudhananda Biswal
+        -   name:   Dr. B. Biswal
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/biswal.jpg
             bio:    
         -   name:   Dr. Asani Bhaduri
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/asani.jpg
             bio:    
-        -   name:   Dr. Dapayan Dasgupta
+        -   name:   Dr. Daipayan Dasgupta
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/dp-pic.jpg
             bio:    
-        -   name:   Mr. Abhijeet Parmar
+        -   name:   Dr. Sonam Singh
+            img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/sonam.jpg
+        -   name:   Abhijeet Parmar, MS
             img:    
     student:
         -   name:   Ankit Pathak
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/554656_478916968841309_958902291_n.jpg
+            bio:    
+            git:    https://github.com/Pathaked
+            fb:     https://www.facebook.com/AnkyPats
         -   name:   Anurag Singh
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/9507_534105060004531_1911697479_n.jpg
+            bio:    
+            fb:     https://www.facebook.com/profile.php?id=100002151258446
         -   name:   Madhulika Mukharjee
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/10609461_10152340388253182_1781455429365618136_n.jpg
+            bio:    
+            twitter: https://twitter.com/Madhulika_1511
+            fb:     https://www.facebook.com/madhulika.mukherjee
+            github: https://github.com/madhulikamukherjee
         -   name:   Mayank Jain
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/10841622_10204381739216427_1830895912_n.jpg
+            bio:    
+            fb:     https://www.facebook.com/jain15mayank
         -   name:   Pragya Jaiswal
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/10308732_244501955746334_2274514837900992050_n.jpg
+            bio:    
+            github: https://github.com/PragyaCIC
+            fb:     https://www.facebook.com/pragya.jswl
         -   name:   Prashant Sinha
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/1623571_946248492068776_701300619295765708_n.jpg
+            bio:    
+            github: https://github.com/PrashntS
+            fb:     https://www.facebook.com/PrashntS
         -   name:   Shreya Smita
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/1495414_1381942568722979_1453113774_o.jpg
+            bio:    
+            github: https://github.com/shreya--cic
         -   name:   Tarun Khajhuria
             img:    //
-            bio:    //
+            bio:    
+            github: https://github.com/tarunkhajuria42
         -   name:   Vasundhara
-            img:    //
-            bio:    //
+            img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/63442_726581017434024_6902567398253271897_n.jpg
+            bio:    
+            fb:     https://www.facebook.com/vasundhara.mehta.5
 
 ---
 <div class="container">
@@ -112,27 +128,37 @@ people:
     <h2>Opportunities</h2>
 </div-->
 
-<div class="wrapper">
+<div class="container people">
     <h2 class="head">People</h2>
     <h3>Faculty</h3>
-    <ol>
+    <div class="row row-centered">
         {% for person in page.people.faculty %}
-            <li>
+            <div class="col-sm-3 col-centered col-fixed">
                 <img src="{{ person.img }}">
                 <p class="lead">{{ person.name }}</p>
                 <p class="foot">{{ person.bio }}</p>
-            </li>
+            </div>
         {% endfor %}
-    </ol>
+    </div>
     <h3>Students</h3>
-    <ol>
+    <div class="row row-centered">
         {% for person in page.people.student %}
-            <li>
+            <div class="col-sm-3 col-centered col-fixed">
                 <img src="{{ person.img }}">
                 <p class="lead">{{ person.name }}</p>
                 <p class="foot">{{ person.bio }}</p>
-            </li>
+                <p class="links">
+                {% if person.github %}
+                    <a href="{{ person.github }}"><img src="/assets/img/link.github.png"></a>
+                {% endif %}
+                {% if person.twitter %}
+                    <a href="{{ person.twitter }}"><img src="/assets/img/link.twitter.png"></a>
+                {% endif %}
+                {% if person.fb %}
+                    <a href="{{ person.fb }}"><img src="/assets/img/link.facebook.png"></a>
+                {% endif %}
+                </p>
+            </div>
         {% endfor %}
-    </ol>
-
+    </div>
 </div>
