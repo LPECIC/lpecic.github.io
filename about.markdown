@@ -6,13 +6,13 @@ people:
     faculty:
         -   name:   Prof. Madan Mohan Chaturvedi
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/mmc.jpg
-            bio:    
+            bio:    Laboratory for Chromatin Biology, Department of Zoology
         -   name:   Dr. B. Biswal
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/biswal.jpg
-            bio:    
+            bio:    Associate Professor in Physics; Course Coordinator
         -   name:   Dr. Asani Bhaduri
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/asani.jpg
-            bio:    
+            bio:    Institute of Genomics and Integrative Biology
         -   name:   Dr. Daipayan Dasgupta
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/dp-pic.jpg
             bio:    
@@ -62,7 +62,17 @@ people:
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/63442_726581017434024_6902567398253271897_n.jpg
             bio:    
             fb:     https://www.facebook.com/vasundhara.mehta.5
-
+researchgroups:
+    -   name: Int Sense
+        background: 
+    -   name: Sensible Systems
+        sub:  IoT, Affective and Pervasive Computing
+        background:
+    -   name: What IF
+        sub:  Big Data/ Reality Mining / Machine Learning / Computational Creativity
+        background:
+    -   name: Digital Humanities
+    -   name: Vox Pix Motion
 ---
 <div class="container">
     <div class="row">
@@ -71,9 +81,14 @@ people:
             <p>Within a year of its inception, the Lab has faculty and students working in five research groups developing technologies that have started producing critical research outputs and spin-offs. The Lab is dedicated to understand why the things are the way they are, bring deeper insights into patterns and help individuals make choices that are sensible and smart.</p>
         </div>
         <div class="col-md-7">
-            <ul>
-                <li>LOL</li>
-            </ul>
+            <div class="row row-centered">
+                {% for group in page.researchgroups %}
+                    <div class="col-sm-3 col-centered col-fixed">
+                        <p class="lead">{{ group.name }}</p>
+                        <p class="foot">{{ group.sub }}</p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
