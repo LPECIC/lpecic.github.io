@@ -19,7 +19,7 @@ people:
         -   name:   Dr. Sonam Singh
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/sonam.jpg
         -   name:   Abhijeet Parmar, MS
-            img:    
+            img:    /assets/img/icon.generic.face.png
     student:
         -   name:   Ankit Pathak
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/554656_478916968841309_958902291_n.jpg
@@ -55,7 +55,7 @@ people:
             bio:    
             github: https://github.com/shreya--cic
         -   name:   Tarun Khajhuria
-            img:    //
+            img:    /assets/img/icon.generic.face.png
             bio:    
             github: https://github.com/tarunkhajuria42
         -   name:   Vasundhara
@@ -149,13 +149,13 @@ people:
                 <p class="foot">{{ person.bio }}</p>
                 <p class="links">
                 {% if person.github %}
-                    <a href="{{ person.github }}"><img src="/assets/img/link.github.png"></a>
+                    <a href="{{ person.github }}" target="_blank"><img src="/assets/img/link.github.png"></a>
                 {% endif %}
                 {% if person.twitter %}
-                    <a href="{{ person.twitter }}"><img src="/assets/img/link.twitter.png"></a>
+                    <a href="{{ person.twitter }}" target="_blank"><img src="/assets/img/link.twitter.png"></a>
                 {% endif %}
                 {% if person.fb %}
-                    <a href="{{ person.fb }}"><img src="/assets/img/link.facebook.png"></a>
+                    <a href="{{ person.fb }}" target="_blank"><img src="/assets/img/link.facebook.png"></a>
                 {% endif %}
                 </p>
             </div>
