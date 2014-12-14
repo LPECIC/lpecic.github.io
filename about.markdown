@@ -220,3 +220,7 @@ people:
         </div>
     </div>
 </div>
+
+<div class="full-width-img">
+    <img src="http://cdn.ducic.ac.in/ducic/ImagesCommons/itil-1.jpg">
+</div>
