@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  About the Lab
-hero:   /assets/img/background.sq.r.png
+hero:   /assets/img/background.sq.royal.png
 people:
     faculty:
         -   name:   Prof. Madan Mohan Chaturvedi
@@ -207,14 +207,16 @@ people:
 <div class="about-hero">
     <div class="row">
         <div class="col-xs-6">
-            <div>
-                <img src="/assets/img/logo.foot.png">
+            <div class="center vertical">
+                <h2>Join Us</h2>
+                <h3>Student Associateship Program</h3>
+                <h3>Summer Internship Program</h3>
             </div>
         </div>
         <div class="col-xs-6">
-            <h2>Join the Fun!</h2>
-            <h3>Student Associateship Program</h3>
-            <h3>Summer Internship Program</h3>
+            <div class="center vertical">
+                <img src="/assets/img/logo.foot.png">
+            </div>
         </div>
     </div>
 </div>
