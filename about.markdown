@@ -6,20 +6,28 @@ people:
     faculty:
         -   name:   Prof. Madan Mohan Chaturvedi
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/mmc.jpg
-            bio:    Laboratory for Chromatin Biology, Department of Zoology
+            bio:    Biochemistry | Molecular Biology
+
         -   name:   Dr. B. Biswal
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/biswal.jpg
-            bio:    Associate Professor in Physics; Course Coordinator
+            bio:    Computational Physics | Biophysics
+
         -   name:   Dr. Asani Bhaduri
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/asani.jpg
-            bio:    Institute of Genomics and Integrative Biology
+            bio:    Computational Biology | Systems Biology
+
         -   name:   Dr. Daipayan Dasgupta
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/dp-pic.jpg
-            bio:    
+            bio:    Electronic Devices & Systems
+
         -   name:   Dr. Sonam Singh
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/sonam.jpg
+            bio:    Computational Fluid Dynamics
+
         -   name:   Abhijeet Parmar, MS
             img:    /assets/img/icon.generic.face.png
+            bio:    Gepspatial  Cognition |  Data Analysis
+
     student:
         -   name:   Ankit Pathak
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/554656_478916968841309_958902291_n.jpg
@@ -27,39 +35,47 @@ people:
             github: https://github.com/Pathaked
             twitter: https://twitter.com/Pathaked
             fb:     https://www.facebook.com/AnkyPats
+
         -   name:   Anurag Singh
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/9507_534105060004531_1911697479_n.jpg
             bio:    
             fb:     https://www.facebook.com/profile.php?id=100002151258446
+
         -   name:   Madhulika Mukharjee
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/10609461_10152340388253182_1781455429365618136_n.jpg
             bio:    
             twitter: https://twitter.com/Madhulika_1511
             fb:     https://www.facebook.com/madhulika.mukherjee
             github: https://github.com/madhulikamukherjee
+
         -   name:   Mayank Jain
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/10841622_10204381739216427_1830895912_n.jpg
             bio:    
             fb:     https://www.facebook.com/jain15mayank
+
         -   name:   Pragya Jaiswal
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/10308732_244501955746334_2274514837900992050_n.jpg
             bio:    
             github: https://github.com/PragyaCIC
             fb:     https://www.facebook.com/pragya.jswl
+
         -   name:   Prashant Sinha
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/1623571_946248492068776_701300619295765708_n.jpg
             bio:    
             twitter: https://twitter.com/PrashntSinha
             github: https://github.com/PrashntS
             fb:     https://www.facebook.com/PrashntS
+
         -   name:   Shreya Smita
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/1495414_1381942568722979_1453113774_o.jpg
             bio:    
             github: https://github.com/shreya--cic
+
         -   name:   Tarun Khajhuria
             img:    /assets/img/icon.generic.face.png
             bio:    
             github: https://github.com/tarunkhajuria42
+
         -   name:   Vasundhara
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/63442_726581017434024_6902567398253271897_n.jpg
             bio:    
