@@ -26,7 +26,7 @@ people:
 
         -   name:   Abhijeet Parmar, MS
             img:    /assets/img/icon.generic.face.png
-            bio:    Gepspatial  Cognition |  Data Analysis
+            bio:    Geospatial  Cognition |  Data Analysis
 
     student:
         -   name:   Ankit Pathak
@@ -202,4 +202,9 @@ people:
             </div>
         {% endfor %}
     </div>
+</div>
+
+<div class="container people">
+    <h2 class="head">Student Associateship Program</h2>
+    <h3>Faculty</h3>
 </div>
