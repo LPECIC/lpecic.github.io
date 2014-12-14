@@ -204,7 +204,17 @@ people:
     </div>
 </div>
 
-<div class="container people">
-    <h2 class="head">Student Associateship Program</h2>
-    <h3>Faculty</h3>
+<div class="about-hero">
+    <div class="row">
+        <div class="col-xs-6">
+            <div>
+                <img src="/assets/img/logo.foot.png">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <h2>Join the Fun!</h2>
+            <h3>Student Associateship Program</h3>
+            <h3>Summer Internship Program</h3>
+        </div>
+    </div>
 </div>
