@@ -208,9 +208,10 @@ people:
     <div class="row">
         <div class="col-xs-6">
             <div class="center vertical">
-                <h2>Join Us</h2>
+                <h2>Opportunities</h2>
                 <h3>Student Associateship Program</h3>
                 <h3>Summer Internship Program</h3>
+                <h4><a href="/student-associateship-program/">Learn More</a></h4>
             </div>
         </div>
         <div class="col-xs-6">
