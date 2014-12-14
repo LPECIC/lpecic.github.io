@@ -204,7 +204,7 @@ people:
     </div>
 </div>
 
-<div class="about-hero">
+<div class="fluid-hero">
     <div class="row">
         <div class="col-xs-6">
             <div class="center vertical">
