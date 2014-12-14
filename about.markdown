@@ -67,12 +67,11 @@ people:
 ---
 <div class="container">
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5 about">
             <p>Laboratory for Pattern Engineering is focused on amalgamating chaos to engineer patterns and structures to improve the way we learn, see things and grow. Through its diversified research groups, the Lab fosters cutting edge research in areas such as pervasive computing, social dynamics and digital humanities.</p>
             <p>Within a year of its inception, the Lab has faculty and students working in five research groups developing technologies that have started producing critical research outputs and spin-offs. The Lab is dedicated to understand why the things are the way they are, bring deeper insights into patterns and help individuals make choices that are sensible and smart.</p>
         </div>
         <div class="col-md-offset-1 col-md-6 groups">
-            <h3>Research Groups</h3>
             <div class="row">
                 <div class="col-sm-4" style="background:#003D5C">
                     <div class="center vertical">
@@ -153,10 +152,6 @@ people:
         </div>
     </div>
 </div>
-
-<!--div class="wrapper">
-    <h2>Opportunities</h2>
-</div-->
 
 <div class="container people">
     <h2 class="head">People</h2>
