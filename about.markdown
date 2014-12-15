@@ -92,7 +92,7 @@ people:
                 <div class="col-sm-4" style="background:#003D5C">
                     <div class="center vertical">
                         <p class="lead">IntSense</p>
-                        <p class="foot">Graphics | Apps | </p>
+                        <p class="foot">Graphics | Apps | Computational Creativity</p>
                     </div>
                 </div>
                 <div class="col-sm-4" style="background:#183152">
@@ -104,7 +104,7 @@ people:
                 <div class="col-sm-4" style="background:#004358">
                     <div class="center vertical">
                         <p class="lead">What IF</p>
-                        <p class="foot">Big Data | Reality Mining | Machine Learning | Computational Creativity</p>
+                        <p class="foot">Big Data | Reality Mining | Machine Learning</p>
                     </div>
                 </div>
             </div>
@@ -160,7 +160,7 @@ people:
         <div class="col-sm-offset-4 col-sm-2">
             <div class="card lg">
                 <img src="/assets/img/icon.intense.competition.png">
-                <p class="h2">Intense Competition</p>
+                <p class="h2">Incentives for Creativity</p>
             </div>
         </div>
         <div class="col-sm-2">
