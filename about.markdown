@@ -8,24 +8,24 @@ people:
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/mmc.jpg
             bio:    Biochemistry | Molecular Biology
 
-        -   name:   Dr. B. Biswal
+        -   name:   B. Biswal, PhD
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/biswal.jpg
             bio:    Computational Physics | Biophysics
 
-        -   name:   Dr. Asani Bhaduri
+        -   name:   Asani Bhaduri, PhD
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/asani.jpg
             bio:    Computational Biology | Systems Biology
 
-        -   name:   Dr. Daipayan Dasgupta
+        -   name:   Daipayan Dasgupta, PhD
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/dp-pic.jpg
             bio:    Electronic Devices & Systems
 
-        -   name:   Dr. Sonam Singh
+        -   name:   Sonam Singh, PhD
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/sonam.jpg
             bio:    Computational Fluid Dynamics
 
         -   name:   Abhijeet Parmar, MS
-            img:    /assets/img/icon.generic.face.png
+            img:    /assets/img/background.noisy.royal.png
             bio:    Geospatial  Cognition |  Data Analysis
 
     student:
@@ -92,18 +92,19 @@ people:
                 <div class="col-sm-4" style="background:#003D5C">
                     <div class="center vertical">
                         <p class="lead">IntSense</p>
+                        <p class="foot">Graphics | Apps | </p>
                     </div>
                 </div>
                 <div class="col-sm-4" style="background:#183152">
                     <div class="center vertical">
                         <p class="lead">Sensible Systems</p>
-                        <p class="foot">IoT, Affective and Pervasive Computing</p>
+                        <p class="foot">IoT | Affective Computing | Pervasive Computing</p>
                     </div>
                 </div>
                 <div class="col-sm-4" style="background:#004358">
                     <div class="center vertical">
                         <p class="lead">What IF</p>
-                        <p class="foot">Big Data/ Reality Mining / Machine Learning / Computational Creativity</p>
+                        <p class="foot">Big Data | Reality Mining | Machine Learning | Computational Creativity</p>
                     </div>
                 </div>
             </div>
@@ -111,11 +112,13 @@ people:
                 <div class="col-sm-6" style="background:#002D40">
                     <div class="center vertical">
                         <p class="lead">Digital Humanities</p>
+                        <p class="foot">Language | Culture | Society</p>
                     </div>
                 </div>
                 <div class="col-sm-6" style="background:#005869">
                     <div class="center vertical">
                         <p class="lead">Vox Pix Motion</p>
+                        <p class="foot">Computer Vision | Augmented Reality | Animation</p>
                     </div>
                 </div>
             </div>
