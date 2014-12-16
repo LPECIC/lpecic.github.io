@@ -27,7 +27,6 @@ people:
         -   name:   Abhijeet Parmar, MS
             img:    /assets/img/background.noisy.royal.png
             bio:    Geospatial  Cognition |  Data Analysis
-
     student:
         -   name:   Ankit Pathak
             img:    http://cdn.ducic.ac.in/ducic/Assets/Ext/Pattern/554656_478916968841309_958902291_n.jpg
@@ -81,7 +80,7 @@ people:
             bio:    
             fb:     https://www.facebook.com/vasundhara.mehta.5
 ---
-<div class="container">
+<div class="container" id="about">
     <div class="row">
         <div class="col-md-5 about">
             <p>Laboratory for Pattern Engineering is focused on amalgamating chaos to engineer patterns and structures to improve the way we learn, see things and grow. Through its diversified research groups, the Lab fosters cutting edge research in areas such as pervasive computing, social dynamics and digital humanities.</p>
@@ -126,7 +125,7 @@ people:
     </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper" id="ecosystem">
     <h2 class="head">The Ecosystem</h2>
 </div>
 <div class="container bg-gray">
@@ -172,7 +171,7 @@ people:
     </div>
 </div>
 
-<div class="container people">
+<div class="container people" id="people">
     <h2 class="head">People</h2>
     <h3>Faculty</h3>
     <div class="row row-centered">
@@ -207,7 +206,7 @@ people:
     </div>
 </div>
 
-<div class="fluid-hero">
+<div class="fluid-hero" id="opportunities">
     <div class="row">
         <div class="col-xs-6">
             <div class="center vertical">
