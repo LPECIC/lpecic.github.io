@@ -5,7 +5,7 @@ hero:   /assets/img/background.arr.v.png
 
 groups:
     -   name: "Int Sense"
-        description: "Kahani"
+        description: ""
         projects:
             -   name: "TwoDot7"
                 description: ""
