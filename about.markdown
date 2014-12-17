@@ -4,6 +4,7 @@ title:  About the Lab
 hero:   /assets/img/background.sq.royal.png
 people:
     faculty:
+    
         -   name:   Prof. Madan Mohan Chaturvedi
             img:    http://cdn.ducic.ac.in/ducic/Faculty/Faces/mmc.jpg
             bio:    Biochemistry | Molecular Biology
