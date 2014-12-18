@@ -24,7 +24,6 @@ $nav-logo-width: 253px
 $nav-seperator: #2F2F2F
 
 $hero-height: 80%
-$hero-background: url(../img/herobg.jpg) 
 $hero-overlay: rgba(1,20,40,0.2)
 
 $footer-bg: rgb(28, 31, 38)
@@ -253,7 +252,6 @@ body
         background-image: -moz-linear-gradient(-90deg, rgba(0,0,0,0.00) 56%, rgba(0,0,0,0.88) 95%)
         background-image: -ms-linear-gradient(-90deg, rgba(0,0,0,0.00) 56%, rgba(0,0,0,0.88) 95%)
         background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 56%, rgba(0,0,0,0.88) 95%)
-        border-bottom: 2px solid #FFF
         color: #FFFFFF
         padding-top: $nav-height + 24px
         position: relative
@@ -272,7 +270,11 @@ body
             min-height: 80px
 
         .canvas
-            background: $hero-background no-repeat center center 
+            background: url(/assets/img/the-mechanism-of-418198_1280.jpg) no-repeat center center  fixed
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+            background-size: cover
             color: #000
             height: 100%
             position: absolute
@@ -540,4 +542,3 @@ body
     .research
         h2
             font-size: 20px
-            
