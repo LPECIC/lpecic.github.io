@@ -4,19 +4,23 @@ hero:     /assets/img/the-mechanism-of-418198_1280.jpg
 caption:  Open Source 3D Printing Technology Workshop
 details:  Registrations opening soon.
 ---
-<div class="fluid-hero" id="opportunities">
+<div class="fluid-hero lg" id="opportunities">
     <div class="row">
         <div class="col-xs-6">
             <div class="center vertical">
-                <h2>Opportunities</h2>
-                <h3>Student Associateship Program</h3>
-                <h3>Summer Internship Program</h3>
-                <h4><a href="/student-associateship-program/">Learn More</a></h4>
+                <h2>Learn More About</h2>
+                <h3><a href="/about/">The Lab</a></h3>
+                <h3><a href="/student-associateship-program/">Student Associateship Program</a></h3>
+                <h3><a href="/student-associateship-program/">Summer Internship Program</a></h3>
+                <h3><a href="/contact/">Contact Information</a></h3>
             </div>
         </div>
         <div class="col-xs-6">
             <div class="center vertical">
-                <img src="/assets/img/logo.foot.png">
+                <img src="/assets/img/icon.diversity.png">
+                <img src="/assets/img/icon.culture.png">
+                <img src="/assets/img/icon.intense.competition.png">
+                <img src="/assets/img/icon.fuzzy.processes.png">
             </div>
         </div>
     </div>
