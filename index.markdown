@@ -8,7 +8,7 @@ details:  Registrations opening soon.
     <div class="row">
         <div class="col-xs-6">
             <div class="center vertical">
-                <h2>Learn More About</h2>
+                <h2>Learn More About </h2>
                 <h3><a href="/about/">The Lab</a></h3>
                 <h3><a href="/student-associateship-program/">Student Associateship Program</a></h3>
                 <h3><a href="/student-associateship-program/">Summer Internship Program</a></h3>
