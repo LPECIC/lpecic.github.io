@@ -546,6 +546,12 @@ body
 
     .research
 
+        .row
+            border-bottom: 1px dashed #000
+
+            &:last-of-type
+                border-bottom: 0px
+
         .left
             &>h2, &>p
                 position: absolute
@@ -555,6 +561,18 @@ body
             img
                 max-width: 100%
                 max-height: 128px
+        .right
+            &>p
+                font-size: 16px
+            &>a
+                background-image: linear-gradient(-180deg, #5AC36E 0%, #5AC36E 78%, #3F9B83 78%, #3F9B83 100%)
+                color: #FFFFFF
+                padding: 5px 15px 15px 15px
+                border-radius: 5px
+                font-size: 16px
+                //text-transform: uppercase
+                &:hover, &:focus
+                    background-image: linear-gradient(-180deg, #5AC36E 0%, #5AC36E 85%, #3F9B83 85%, #3F9B83 100%)
 
 
         .projects

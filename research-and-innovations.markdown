@@ -7,12 +7,12 @@ hero:   /assets/img/background.arr.v.png
 <div class="container research">
     {% for group in site.data.groups.list %}
         <div class="row">
-            <div class="col-md-7 left">
+            <div class="col-md-6 left">
                 <h2>{{ group.name }}</h2>
                 <p>{{ group.areas }}</p>
                 <img src="/assets/img/{{ group.banner }}">
             </div>
-            <div class="col-md-5 right">
+            <div class="col-md-offset-1 col-md-5 right">
                 <p>{{ group.description }}</p>
                 <a href="javascript:void(0)" onclick='$("#{{ group.name | remove:" "}}").slideToggle();'>Research Projects</a>
                 <ol class="projects" id="{{ group.name | remove:" "}}">
