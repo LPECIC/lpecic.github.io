@@ -546,22 +546,20 @@ body
 
     .research
 
-        .projects
-            display: inline-block
-            background: red
-            .project_showcase
+        .left
+            &>h2, &>p
+                position: absolute
+                z-index: -9999999
+                left: -9000000px
 
-                background: #3B91FF
-                padding: 10px
-                margin: 10px 10px
-                display: inline-block
-                height: auto
-                float: left
-                vertical-align:top
-
+            img
                 max-width: 100%
-                width: 300px
+                max-height: 128px
 
+
+        .projects
+            display: none
+            .project_showcase
                 .project_name
                     font-size: 22px
 
