@@ -121,37 +121,40 @@ groups:
             <p>{{ group.description }}</p>
             <h3>Research Projects</h3>
 
-            <div class="project_showcase">
+            <div class="projects">
             {% for project in group.projects %}
-                <p class="project_name">{{ project.name }}</p>
-                <p class="project_description">{{ project.description }}</p>
-                <div class="project_faculty">
-                    {% for faculty in project.people.faculty %}
-                        {% for person in site.data.people.faculty %}
-                            {% if person.name contains faculty.name %}
-                                <div class="person">
-                                    <p class="name">{{ faculty.name }}</p>
-                                    <img src="{{ person.img }}">
-                                </div>
-                                {% break %}
-                            {% endif %}
+                <div class="project_showcase">
+                    <p class="project_name">{{ project.name }}</p>
+                    <p class="project_description">{{ project.description }}</p>
+                    <div class="project_faculty">
+                        {% for faculty in project.people.faculty %}
+                            {% for person in site.data.people.faculty %}
+                                {% if person.name contains faculty.name %}
+                                    <div class="person">
+                                        <p class="name">{{ faculty.name }}</p>
+                                        <img src="{{ person.img }}">
+                                    </div>
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
                         {% endfor %}
-                    {% endfor %}
-                </div>
-                <div class="project_student">
-                    {% for student in project.people.student %}
-                        {% for person in site.data.people.student %}
-                            {% if person.name contains student.name %}
-                                <div class="person">
-                                    <p class="name">{{ student.name }}</p>
-                                    <img src="{{ person.img }}">
-                                </div>
-                                {% break %}
-                            {% endif %}
+                    </div>
+                    <div class="project_student">
+                        {% for student in project.people.student %}
+                            {% for person in site.data.people.student %}
+                                {% if person.name contains student.name %}
+                                    <div class="person">
+                                        <p class="name">{{ student.name }}</p>
+                                        <img src="{{ person.img }}">
+                                    </div>
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
                         {% endfor %}
-                    {% endfor %}
+                    </div>
                 </div>
             {% endfor %}
+            </div>
         </div>
     {% endfor %}
 </div>
