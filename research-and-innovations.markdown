@@ -6,7 +6,7 @@ hero:   /assets/img/background.arr.v.png
 ---
 <div class="container research">
     {% for group in site.data.groups.list %}
-        <div class="row">
+        <div class="row" id="group_{{ group.name | remove:" "}}">
             <div class="col-md-6 left">
                 <h2>{{ group.name }}</h2>
                 <p>{{ group.areas }}</p>
@@ -54,4 +54,22 @@ hero:   /assets/img/background.arr.v.png
             </div>
         </div>
     {% endfor %}
+</div>
+
+<div class="fluid-hero" id="opportunities">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="center vertical">
+                <h2>About the Lab</h2>
+                <h3>Ecosystem</h3>
+                <h3>People</h3>
+                <h4><a href="/about/">Learn More</a></h4>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="center vertical">
+                <img src="/assets/img/logo.foot.png">
+            </div>
+        </div>
+    </div>
 </div>

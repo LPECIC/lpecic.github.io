@@ -11,42 +11,11 @@ hero:   /assets/img/background.sq.royal.png
             <p>Within a year of its inception, the Lab has faculty and students working in five research groups developing technologies that have started producing critical research outputs and spin-offs. The Lab is dedicated to understand why the things are the way they are, bring deeper insights into patterns and help individuals make choices that are sensible and smart.</p>
         </div>
         <div class="col-md-offset-1 col-md-6 groups">
-            <!--div class="row">
-                <div class="col-sm-4" style="background:#003D5C">
-                    <div class="center vertical">
-                        <p class="lead">IntSense</p>
-                        <p class="foot">Graphics | Apps | Computational Creativity</p>
-                    </div>
-                </div>
-                <div class="col-sm-4" style="background:#183152">
-                    <div class="center vertical">
-                        <p class="lead">Sensible Systems</p>
-                        <p class="foot">IoT | Affective Computing | Pervasive Computing</p>
-                    </div>
-                </div>
-                <div class="col-sm-4" style="background:#004358">
-                    <div class="center vertical">
-                        <p class="lead">What IF</p>
-                        <p class="foot">Big Data | Reality Mining | Machine Learning</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6" style="background:#002D40">
-                    <div class="center vertical">
-                        <p class="lead">Digital Humanities</p>
-                        <p class="foot">Language | Culture | Society</p>
-                    </div>
-                </div>
-                <div class="col-sm-6" style="background:#005869">
-                    <div class="center vertical">
-                        <p class="lead">Vox Pix Motion</p>
-                        <p class="foot">Computer Vision | Augmented Reality | Animation</p>
-                    </div>
-                </div>
-            </div-->
             {% for group in site.data.groups.list %}
-                <img src="/assets/img/{{ group.banner }}" height="75">
+                <a href="/research-and-innovations#group_{{ group.name | remove:" "}}"><img src="/assets/img/{{ group.banner }}"></a>
+                <h2>{{ group.name }}</h2>
+                <p>{{ group.areas }}</p>
+                <p>{{ group.description }}</p>
             {% endfor %}
         </div>
     </div>

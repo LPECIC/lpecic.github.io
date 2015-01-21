@@ -10,6 +10,7 @@ details:  Registrations opening soon.
             <div class="center vertical">
                 <h2>Learn More About </h2>
                 <h3><a href="/about/">The Lab</a></h3>
+                <h3><a href="/research-and-innovations/">Research and Innovations</a></h3>
                 <h3><a href="/student-associateship-program/">Student Associateship Program</a></h3>
                 <h3><a href="/student-associateship-program/">Summer Internship Program</a></h3>
                 <h3><a href="/contact/">Contact Information</a></h3>
