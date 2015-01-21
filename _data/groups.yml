@@ -97,3 +97,6 @@ list:
         areas: "Computer Vision | Augmented Reality | Animation"
         description: "The Vox Pix motion group interacts with this important part of the human information system.  The systems we develop here help the machines to unfold the information in the complexities of visual signals. The objective of the group revolves around the visual human-machine-environment interaction. The group activities range from the analysis of visual inputs to producing effective visual experience. The group works on computer vision, image analysis, image processing, augmented reality, animations, creative visualization and a better machine-human interaction using vision."
         banner: "banner.vox-pix-motion.png"
+    -   name: "Digital Humanities"
+        areas: "Language | Culture | Society"
+        banner: "banner.digital-humanities.png"

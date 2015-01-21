@@ -14,7 +14,9 @@ hero:   /assets/img/background.arr.v.png
             </div>
             <div class="col-md-offset-1 col-md-5 right">
                 <p>{{ group.description }}</p>
-                <a href="javascript:void(0)" onclick='$("#{{ group.name | remove:" "}}").slideToggle();'>Research Projects</a>
+                {% if group.projects.size > 0 %}
+                    <a href="javascript:void(0)" onclick='$("#{{ group.name | remove:" "}}").slideToggle();'>Research Projects</a>
+                {% endif %}
                 <ol class="projects" id="{{ group.name | remove:" "}}">
                     {% for project in group.projects %}
                         <li class="project_showcase">

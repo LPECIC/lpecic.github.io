@@ -472,29 +472,16 @@ body
                         opacity: 1
 
     .groups
-        .row
-            background: url(/assets/img/background.diamonds.dark.png)
+        text-align: center
 
-        div[class^="col-"]
-            color: #FFFFFF
-            height: 150px
-            text-align: center
-            position: relative
-            opacity: 0.8
+        img
+            max-width: 100%
+            margin: 10px 0
 
-            transition: all 0.2s
-
-            &:hover
-                opacity: 1
-                cursor: pointer
-
-            div
-                padding: 10px
-                width: 100%
-                opacity: 1
-
-                .lead
-                    margin: 0
+            &:last-of-type
+                margin-bottom: 0
+            &:first-of-type
+                margin-top: 0
 
     .fluid-hero
         background: #1F2229
@@ -580,6 +567,11 @@ body
             margin: 20px 0
             padding: 0
             .project_showcase
+                border-bottom: 1px dashed #000000
+
+                &:last-of-type
+                    border-bottom: none
+
                 .project_name
                     font-size: 22px
 

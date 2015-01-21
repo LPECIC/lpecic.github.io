@@ -11,7 +11,7 @@ hero:   /assets/img/background.sq.royal.png
             <p>Within a year of its inception, the Lab has faculty and students working in five research groups developing technologies that have started producing critical research outputs and spin-offs. The Lab is dedicated to understand why the things are the way they are, bring deeper insights into patterns and help individuals make choices that are sensible and smart.</p>
         </div>
         <div class="col-md-offset-1 col-md-6 groups">
-            <div class="row">
+            <!--div class="row">
                 <div class="col-sm-4" style="background:#003D5C">
                     <div class="center vertical">
                         <p class="lead">IntSense</p>
@@ -44,7 +44,10 @@ hero:   /assets/img/background.sq.royal.png
                         <p class="foot">Computer Vision | Augmented Reality | Animation</p>
                     </div>
                 </div>
-            </div>
+            </div-->
+            {% for group in site.data.groups.list %}
+                <img src="/assets/img/{{ group.banner }}" height="75">
+            {% endfor %}
         </div>
     </div>
 </div>
