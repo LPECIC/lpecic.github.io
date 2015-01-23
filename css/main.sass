@@ -2,6 +2,7 @@
 ---
 
 @import "mixin"
+@import "bourbon/bourbon"
 
 // Main CSS preprocessor.
 // @author  Prashant Sinha <firstname><lastname>@outlook.com
@@ -75,7 +76,7 @@ body
         text-align: right
         width: 100%
         z-index: 10
-        @include            transform((translateZ(0)))
+        @include transform((translateZ(0)))
 
         @media (max-width: 768px)
             &
@@ -101,7 +102,7 @@ body
             position: fixed
             width: 100%
             z-index: 10
-            @include        transform((translateZ(0)))
+            @include transform((translateZ(0)))
 
             .wrapper
                 margin: 0 10%
@@ -135,7 +136,7 @@ body
                         display: table-cell
                         line-height: 18px
                         padding: ($nav-height - 18px)/2 0
-                        @include        transition((background 0.2s, border 0.2s))
+                        @include transition((background 0.2s, border 0.2s))
 
                         &:hover, &:active
                             background: $nav-hover
@@ -174,7 +175,7 @@ body
             top: 0
             width: 100%
             z-index: 10
-            @include        transform((translateZ(0)))
+            @include transform((translateZ(0)))
 
             .wrapper
                 margin: 0
@@ -204,7 +205,7 @@ body
                     position: absolute
                     width: $nav-height
                     text-align: center
-                    @include            transition((background 0.2s))
+                    @include transition((background 0.2s))
                     top: 0
 
                     &:hover, &:active, &.open
@@ -225,17 +226,17 @@ body
                     top: 0
                     left: 0
                     min-width: 240px
-                    @include            translate(-100%, 0)
-                    @include            transition((transform 0.3s))
+                    @include translate(-100%, 0)
+                    @include transition((transform 0.3s))
 
                     &.open
-                        @include        translate(0, 0)
+                        @include translate(0, 0)
 
                     li
                         cursor: pointer
                         line-height: 18px
                         padding: ($nav-height - 18px)/2 ($nav-height/4)
-                        @include        transition((background 0.2s, border 0.2s))
+                        @include transition((background 0.2s, border 0.2s))
 
                         &:hover, &:active
                             background: $nav-hover
@@ -437,7 +438,7 @@ body
         &.vertical
             position: absolute
             top: 50%
-            transform: translateY(-50%)
+            @include transform(translateY(-50%))
 
 
     // Page Specific CSS from here. Refrain from adding universal CSS here.
@@ -466,7 +467,7 @@ body
                 img
                     height: 20px
                     opacity: 0.7
-                    transition: opacity 0.2s
+                    @include transition(opacity 0.2s)
                     border-radius: 0
                     &:hover
                         opacity: 1
