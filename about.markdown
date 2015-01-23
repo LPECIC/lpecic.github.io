@@ -72,7 +72,7 @@ hero:   /assets/img/background.sq.royal.png
     <h3>Faculty</h3>
     <div class="row row-centered">
         {% for person in site.data.people.faculty %}
-            <div class="col-sm-3 col-centered col-fixed">
+            <div class="person">
                 <img src="{{ person.img }}">
                 <p class="lead">{{ person.name }}</p>
                 <p class="foot">{{ person.bio }}</p>
@@ -82,7 +82,7 @@ hero:   /assets/img/background.sq.royal.png
     <h3>Students</h3>
     <div class="row row-centered">
         {% for person in site.data.people.student %}
-            <div class="col-sm-3 col-centered col-fixed">
+            <div class="person">
                 <img src="{{ person.img }}">
                 <p class="lead">{{ person.name }}</p>
                 <p class="foot">{{ person.bio }}</p>
