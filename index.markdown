@@ -2,7 +2,7 @@
 layout:   index
 hero:     /assets/img/the-mechanism-of-418198_1280.jpg
 caption:  Open Source 3D Printing Technology Workshop
-details:  Registrations opening soon.
+details:  Registrations opening on 18th February.
 ---
 <div class="fluid-hero lg" id="opportunities">
     <div class="row">
