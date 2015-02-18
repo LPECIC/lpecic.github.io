@@ -22,5 +22,5 @@ hero:   /assets/img/background.arr.b.png
     <h4>4. Who do I contact if the information provided here is not enough, or I require assistance?</h4>
     <p>Please contact us on:<br>
     1. Prashant Sinha (+91 99 101 34045, prashant@ducic.ac.in) for queries related to the 3D Printing Workshop.<br>
-    2. Yatharth Aggarwal (+91 98 111 75293) for queries related to the Robotics Bootcamp.</p>
+    2. Yatharth Aggarwal (+91 85 128 03280) for queries related to the Robotics Bootcamp.</p>
 </div>
