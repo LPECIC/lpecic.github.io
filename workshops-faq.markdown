@@ -6,7 +6,7 @@ hero:   /assets/img/background.arr.b.png
 ---
 <div class="container" id="about">
     <h4>1. Am I eligible?</h4>
-    <p>The Robotics Bootcamp is open for College Students. 3D Printing Workshop is open for College Teachers, and M.Sc. (Electronics) Students..</p>
+    <p>The Robotics Bootcamp is open for College Students. 3D Printing Workshop is open for students from varied disciplines.</p>
     <h4>2. How do I register for the workshop?</h4>
     <p>Registration for either of the workshop is through our portal <a href="http://backstage.ducic.ac.in/">http://backstage.ducic.ac.in/</a>.<br>
     You'll be asked for your background details, academic info and the Payment Information. The Payment is in form of a Demand Draft. To complete your registration, please upload a Scanned Copy or a Clear Image of the DD in the Registration Form.</p>
